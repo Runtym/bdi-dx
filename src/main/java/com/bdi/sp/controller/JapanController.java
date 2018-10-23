@@ -24,7 +24,7 @@ public class JapanController {
 	
 	@Autowired
 	private JapanService js;
-	
+	//
 	@RequestMapping(value="/japans",method=RequestMethod.GET)
 	public @ResponseBody List<Japan> japanList(@ModelAttribute Japan j){
 		return js.getJapanList(j);
